@@ -17,3 +17,8 @@ include 'services:webservice'
 */
 
 rootProject.name = 'reliable-person-register'
+
+include 'infrastructure'
+include 'domain'
+include 'application'
+include 'presentation'
