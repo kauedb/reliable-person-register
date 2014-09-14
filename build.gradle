@@ -31,5 +31,14 @@ subprojects {
         // 'test.useTestNG()' to your build script.
         testCompile "junit:junit:4.11"
     }
+
+    test {
+        testLogging {
+            // set options for log level LIFECYCLE
+            events "failed", "passed", "skipped", "started"
+            exceptionFormat "short"
+        }
+
+    }
 }
 
